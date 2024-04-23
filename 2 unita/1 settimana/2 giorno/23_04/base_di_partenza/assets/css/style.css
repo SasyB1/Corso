@@ -19,7 +19,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -298,6 +302,16 @@ button {
 }
 
 /* ELEMENTI NELL' ASIDE */
+aside div {
+  position: relative;
+}
+aside i.fa-tag {
+  position: absolute;
+  font-size: 5em;
+  right: 10px;
+  top: 0;
+  color: #cecece;
+}
 aside h2 {
   text-align: center;
   color: #333;
@@ -329,7 +343,11 @@ aside div p:last-child {
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
@@ -384,5 +402,81 @@ footer a {
   .social,
   .toTop {
     display: none;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+#underLine {
+  bottom: 40px;
+  position: relative;
+}
+.clearfix h1 {
+  position: sticky;
+  z-index: 1;
+}
+.imgLeft {
+  float: left;
+}
+section {
+  position: relative;
+}
+section h2 {
+  position: absolute;
+  top: -20px;
+  text-transform: uppercase;
+}
+
+footer button {
+  border: 2px solid white;
+  background-color: #aebfc5;
+  border-radius: 5px;
+  backdrop-filter: blur(7px);
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  z-index: 4;
+}
+.fa-square-plus,
+.fa-calendar-days {
+  color: #3568c5;
+  padding: 0.3em 0.4em;
+  font-size: 1.5em;
+}
+.fa-square-caret-up {
+  color: #f65e5e;
+  padding: 0.3em 0.4em;
+  font-size: 1.5em;
+}
+
+#firstButton {
+  position: fixed;
+  bottom: 150px;
+  right: 0px;
+}
+#secondButton {
+  position: fixed;
+  bottom: 80px;
+  right: 0px;
+}
+#thirdButton {
+  position: fixed;
+  right: 0px;
+  bottom: 15px;
+}
+
+@media screen and (min-width: 700px) {
+  footer button {
+    padding: 0.3em 0.4em;
+  }
+  #firstButton {
+    top: 12px;
+    bottom: auto;
+  }
+  #secondButton {
+    top: 70px;
+    bottom: auto;
   }
 }
