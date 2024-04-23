@@ -1,0 +1,186 @@
+/* Your styles here */
+body {
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    color:#393d41  ;
+    line-height:1.65 ;
+}
+#boxlogo {
+background: #000000;
+height: 9rem;
+padding-left: 3em;
+   
+}
+header div img {
+    margin-top: 2.5em;
+    width: 13rem;
+
+}
+#boxstart {
+    text-align: center;
+   background-image:url(../images/banner.jpg);
+   background-size: cover;
+    height: 25em;
+   margin-top: 0;
+   padding-top: 6rem;
+}
+#Title {
+    font-size: 1.7rem;
+   color: #27A2CA;
+    padding-top: 60px;
+   font-weight: bold;
+   padding-left: 8px;
+   padding-right: 8px;
+   line-height: 1.5;
+}
+#parry1 {
+    padding: 20px 15px;
+    font-size: 1.1rem;
+    line-height:1.5em ;
+}
+#ready {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color:#DF4727 ;
+    margin: 15px;
+    margin-left: 36rem;
+    margin-right: 36rem;
+    padding:1rem;
+    border-radius: 5px;
+    margin-top: 1.3rem;
+}
+article {
+    margin-top: 10em;
+}
+#article {
+    text-align: center;
+}
+article h1 {
+    color: #27A2CA;
+    margin: 1rem;
+    font-size: 1.2em; 
+    font-weight: bold;
+    text-align: left;
+    margin-left: 44rem;
+}
+.dacasa {
+    padding-top: 0.2rem;
+    font-size: 1.2rem;
+    margin: 0 30px;
+    line-height:1.5em ;
+    padding-left: 15px; 
+    text-align: left;
+    margin-left: 43rem;
+}
+
+#rotonda {
+    border-radius:40em;
+    margin-top: 1m;
+    margin-left: 8.5em;
+    height: 480px;
+    margin-bottom: 1.9rem;
+    float: left;
+}
+.wild {
+    color: white;
+ }
+
+#arancio {
+    background-color: #E82C0E;
+    margin-top: 13rem;
+    height: 21em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+article div h1 {
+text-align: left;
+}
+
+#corsiv {
+    font-size: 20px;
+    font-style: italic;
+   padding-top: 15px;
+   padding-bottom: 16px;
+}
+article div h2 {
+    font-size: 15px;
+    padding: 3px;
+}
+#mini {
+    font-size: 10px;
+}
+
+h1 {
+    color: #25a2c3 ;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    padding-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    line-height:1.5 ;
+    font-size: 1.2em;
+}
+
+.sezioniaffiancate {
+    margin-top: 30px;
+    text-align: center;
+float: left;
+display: block;
+border: 1px #DDDDDD solid;
+padding-bottom: 1.5em;
+
+}
+.sezioniaffiancate img {
+     width: 355px;
+    }
+    #srl img {
+        width: 375px;
+    }
+    #srl {
+        margin-left: 4em;
+        padding-bottom: 29px
+    }
+    #goggy {
+        margin-left: 4em;
+        padding-bottom: 20px;
+    }
+    #float {
+        margin-left: 4em;
+    }
+    .sezioniaffiancate h1 {
+        padding-top: 15px;
+    }
+    .sezioniaffiancate p {
+        font-size: 14px;
+    }
+    aside {
+        margin-top: 35em;
+        text-align: center;
+        color: white;
+        background-color: #26A2C6;
+        height: 23rem;
+        
+    }
+    aside h2 {
+        padding-top:  1.5em;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    #accapo {
+        font-size: 21px;
+        padding-top: 18px;
+        line-height: 33px ;
+    }
+    #leather {
+        margin: 30px 520px;
+        border-top: 1px #DDDDDD solid;
+        padding-top: 30px;
+    }
+    a {
+        color: white;
+    }

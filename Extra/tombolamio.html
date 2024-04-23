@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tombola</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+      }
+      #container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: azure;
+        padding: 20px;
+      }
+      #numeri {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+      }
+      .numero {
+        border: 1px solid black;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .coloramelo {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Tombola</h1>
+      <div id="numeri"></div>
+      <button id="estrazione">Genera Numero</button>
+      <p id="numero-estratto">Numero estratto</p>
+      <!-- Aggiunto un id per selezionare l'elemento p -->
+    </div>
+    <script>
+      let numeri = document.querySelector("#numeri");
+      let button = document.querySelector("#estrazione");
+
+      function generaCartella() {
+        for (let i = 1; i <= 90; i++) {
+          // Inizia da 1 invece di 0
+          let numeroDiv = document.createElement("div");
+          numeroDiv.classList.add("numero");
+          numeroDiv.innerText = i;
+          numeri.appendChild(numeroDiv);
+        }
+      }
+      let numeriGenerati = [];
+      function RandomNumber() {
+        for (let i = 0; i < 90; i++) {
+          let numeroCasuale = Math.floor(Math.random() * 90) + 1;
+          if (!numeriGenerati.includes(numeroCasuale)) {
+            numeriGenerati.push(numeroCasuale);
+            return numeroCasuale;
+          }
+        }
+      }
+
+      button.addEventListener("click", function () {
+        let numeroEstratto = RandomNumber();
+        let numeroPreso = document.querySelector("#numero-estratto"); // Seleziona l'elemento p per visualizzare il numero estratto
+        numeroPreso.innerText = numeroEstratto;
+
+        let numeriGriglia = document.querySelectorAll(".numero");
+        for (let i = 0; i < numeriGriglia.length; i++) {
+          let numeroDiv = numeriGriglia[i];
+          if (parseInt(numeroDiv.innerText) === numeroEstratto) {
+            numeroDiv.classList.add("coloramelo");
+          }
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function (e) {
+        e.preventDefault();
+        generaCartella();
+      });
+    </script>
+  </body>
+</html>

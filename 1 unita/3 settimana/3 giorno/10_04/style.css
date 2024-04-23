@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-color: rgb(221, 127, 240);
+    border: 1px #000000 solid;
+    margin: 10%;
+}
+ul {
+    list-style-type: none;
+}
+.toggle {
+    text-decoration: line-through;
+}
+
+header {
+    margin: 1vw;
+    background-color: rgb(173, 77, 211);
+}
+h1 {
+    color: white;
+}
+main {
+    text-align: left;
+    margin-left:1em;
+}
+#testo {
+    padding: 15px;
+    padding-right:60%;
+}
+#btn {
+    margin-left: 20px;
+    padding: 15px 70px;
+}
+#lista li {
+    border:1px black solid;
+    background-color: blueviolet;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 93%;
+}
+
+button {
+   text-align: right;
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Mio</title>
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <div id="Container">
+      <h2>Memory Game</h2>
+      <div id="Game"></div>
+      <button class="reset" onclick="window.location.reload();">
+        Reset Game
+      </button>
+    </div>
+    <script>
+      const emoji = [
+        "🐱",
+        "🦉",
+        "🐾",
+        "🦁",
+        "🦋",
+        "🐛",
+        "🐝",
+        "🐬",
+        "🦊",
+        "🐨",
+        "🐰",
+        "🐯",
+        "🐱",
+        "🦉",
+        "🐾",
+        "🦁",
+        "🦋",
+        "🐛",
+        "🐝",
+        "🐬",
+        "🦊",
+        "🐨",
+        "🐯",
+        "🐰",
+      ];
+      function Shuffle(emoji) {
+        for (let i = 0; i < emoji.length - 1; i++) {
+          let j = Math.floor(Math.random() * (emoji.length - i)) + i;
+          [emoji[i], emoji[j]] = [emoji[j], emoji[i]];
+        }
+        return emoji;
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        Shuffle(emoji);
+        emojiShuffled = Shuffle(emoji);
+
+        let cardsOpened = []; // Memorizza le carte girate
+
+        for (let i = 0; i < emoji.length; i++) {
+          let box = document.createElement("div");
+          box.className = "item";
+          box.innerHTML = emojiShuffled[i];
+          document.querySelector("#Game").appendChild(box);
+
+          box.onclick = function () {
+            if (!this.classList.contains("boxOpen")) {
+              this.classList.add("boxOpen");
+              cardsOpened.push(this); // Aggiunge la carta alla lista delle carte girate
+
+              if (cardsOpened.length === 2) {
+                // Confronta i simboli delle due carte girate
+                if (cardsOpened[0].innerHTML === cardsOpened[1].innerHTML) {
+                  cardsOpened[0].classList.add("boxMatch");
+                  cardsOpened[1].classList.add("boxMatch");
+                  cardsOpened = []; // Resetta la lista delle carte girate
+                } else {
+                  // Se i simboli non corrispondono, rimuovi la classe "boxOpen" dopo un breve ritardo
+                  setTimeout(function () {
+                    cardsOpened.forEach((card) => {
+                      card.classList.remove("boxOpen");
+                    });
+                    cardsOpened = []; // Resetta la lista delle carte girate
+                  }, 500);
+                }
+              }
+            }
+          };
+        }
+      });
+    </script>
+  </body>
+</html>
