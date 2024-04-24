@@ -188,13 +188,13 @@ h1 {
   #latestNews h2 {
     margin-bottom: 1em;
   }
-  #latestNews .sectionWrapper {
+  #latestNews .textContainer {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
   }
   #latestNews img {
-    max-width: 50%;
+    height: 100%;
+
     margin: 1em 5px 1em 1em;
   }
 }
