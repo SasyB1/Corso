@@ -153,7 +153,6 @@ p {
   color: #6b6b6b;
   line-height: 10px;
 }
-
 .numberArticle {
   color: #f2f2f2;
   font-size: 32px;
@@ -212,5 +211,72 @@ aside div p {
 }
 #navbarMiddle nav ul li {
   margin: 10px;
-  font-size: 15px;
+  font-size: 12px;
+}
+
+/* bottomArticle */
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+}
+
+.bottomArticleContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.5em;
+  margin-top: 0.4em;
+  margin-bottom: 2.3em;
+}
+
+.bottomArticleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 2.5em;
+  font-size: 11px;
+  line-height: 14px;
+  max-width: 50%;
+}
+.bottomArticleWrapper img:first-child {
+  width: 20px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.users {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleArticle {
+  padding-top: 5px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.contentArticle {
+  color: grey;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.marginBottomArticle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  margin-top: 2px;
+  width: 100%;
+}
+.marginBottomArticle div > :nth-child(3) {
+  background-color: #f2f2f2;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.dateBottomArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
