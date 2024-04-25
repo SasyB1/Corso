@@ -280,3 +280,38 @@ article {
   justify-content: center;
   align-items: center;
 }
+
+/* Footer */
+footer {
+  color: white;
+  background-color: black;
+}
+footer img {
+  filter: invert(100%);
+  padding: 2em 0 1.5em 2em;
+}
+footer div ul {
+  display: flex;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid white;
+}
+footer div ul li {
+  margin-right: 20px;
+}
+#collegamentiWrapper {
+  padding: 1.5em 0 0 2em;
+}
+#collegamentiWrapper h6 {
+  margin-bottom: 1em;
+}
+#collegamentiWrapper button {
+  padding: 0.5em 1em;
+  margin-right: 0.8em;
+  margin-bottom: 1em;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
