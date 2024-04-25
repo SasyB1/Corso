@@ -3,6 +3,9 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 }
+ul {
+  list-style: none;
+}
 
 /* Dimensions: 390x844 */
 
@@ -14,7 +17,8 @@ header div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5em;
+  padding: 1.5em 1.5em 1.2em 0;
+
   background-color: #ffc017;
   border-bottom: 1px solid black;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,8 +28,17 @@ header h2 {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 }
-header nav ul {
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li:nth-child(-n + 3) {
   display: none;
+}
+nav ul li:nth-child(4) {
+  padding-right: 0.9em;
+  cursor: pointer;
 }
 
 header nav button {
@@ -52,16 +65,17 @@ header nav button {
 }
 #spotlightContainer div h1 {
   font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 74px;
+  letter-spacing: -0.05em;
   padding: 1em 0 0 0.25em;
 }
 #spotlightContainer div p {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  padding: 1.8em;
-  padding-left: 1.2em;
+  padding: 1em;
+  padding-left: 0.8em;
   text-align: start;
 }
 #spotlightContainer button {
@@ -91,17 +105,22 @@ header nav button {
   border-bottom: 1px solid grey;
 }
 #topArticleContainer h3 {
-  font-weight: 500;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
   color: #242424;
   line-height: 20px;
-  margin-left: 2em;
+  margin: 0 0 0 1.8em;
+}
+#trendingLogo {
+  margin-right: 8px;
 }
 .topArticleWrapper div {
   display: flex;
   justify-content: center;
   align-items: first baseline;
-  padding: 0.6em;
+  padding: 0.4em;
 }
 .topArticleItem {
   display: flex;
@@ -117,27 +136,29 @@ header nav button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
+  font-weight: 700;
 }
 .topArticleItem h4,
 p {
-  padding: 4px;
+  padding: 2px;
 }
 .topArticleItem > :nth-child(2) {
   font-weight: 700;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .topArticleItem div {
   font-size: 12px;
   color: #6b6b6b;
   line-height: 10px;
-  display: flex;
-  justify-content: space-evenly;
 }
+
 .numberArticle {
   color: #f2f2f2;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-left: 0.4em;
 }
 #lastTopArticleWrapper {
   margin-bottom: 1em;
