@@ -176,26 +176,26 @@ p {
 }
 
 /* aside */
-aside {
+#asideTop {
   border-bottom: 1px solid grey;
 }
-aside div {
+#asideTop {
   margin: 1.5em;
 }
-aside div h5 {
+#asideTop h5 {
   margin: 1em 0 1em 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 }
-aside ul {
+#asideTop ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 0.3em;
 }
-aside ul li {
+#asideTop ul li {
   margin: 0 10px 10px 0px;
   color: grey;
   border: 1px solid grey;
@@ -205,7 +205,7 @@ aside ul li {
   font-size: 14px;
   font-weight: 600;
 }
-aside div p {
+#asideTop p {
   display: none;
 }
 
@@ -292,6 +292,9 @@ article {
   justify-content: center;
   align-items: center;
 }
+.lastImageBottomArticle img {
+  max-width: 150px;
+}
 
 /* Footer */
 footer {
@@ -348,10 +351,68 @@ footer div ul li {
   }
   #topArticleMedia {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .mediaChange {
     max-width: 260px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mediaChange {
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #mediaSwap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+  #navbarImpil {
+    max-width: 38%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+  }
+  aside {
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    padding-top: 60px;
+  }
+  #navbarMiddle {
+    position: sticky;
+    top: 50px;
+  }
+  .lastImageBottomArticle img {
+    max-width: 250px;
+  }
+  #articleBottom {
+    margin-top: 4.5em;
+  }
+  #collegamentiWrapper {
+    padding-bottom: 2em;
+  }
+  .bottomArticleContainer {
+    justify-content: space-between;
+  }
+  .bottomArticleWrapper {
+    justify-content: center;
+  }
+  .users {
+    font-size: 1.2em;
+  }
+  .titleArticle {
+    font-size: 1.5em;
+  }
+  .contentArticle {
+    font-size: 1.2em;
+  }
+  #collegamentiWrapper button {
+    display: none;
   }
 }
