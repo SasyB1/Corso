@@ -5,11 +5,12 @@ body {
 }
 ul {
   list-style: none;
+  cursor: pointer;
 }
 
-/* Dimensions: 390x844 */
+/* Dimensions: Mobile */
 
-/* navbar */
+/* Navigation Bar */
 
 header div {
   position: fixed;
@@ -18,16 +19,11 @@ header div {
   justify-content: space-around;
   align-items: center;
   padding: 1.5em 1.5em 1.2em 0;
-
   background-color: #ffc017;
   border-bottom: 1px solid black;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-header h2 {
-  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-}
+
 header nav {
   display: flex;
   justify-content: center;
@@ -51,7 +47,7 @@ header nav button {
   cursor: pointer;
 }
 
-/* section */
+/* Section */
 
 #spotlightContainer {
   padding-top: 6rem;
@@ -118,9 +114,14 @@ header nav button {
 }
 .topArticleWrapper div {
   display: flex;
-  justify-content: center;
   align-items: first baseline;
   padding: 0.4em;
+}
+.numberArticle {
+  color: #f2f2f2;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 0.4em;
 }
 .topArticleItem {
   display: flex;
@@ -148,16 +149,13 @@ p {
   line-height: 20px;
   font-size: 14px;
 }
-.topArticleItem div {
+.dateTopArticle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   font-size: 12px;
   color: #6b6b6b;
   line-height: 10px;
-}
-.numberArticle {
-  color: #f2f2f2;
-  font-size: 32px;
-  font-weight: 600;
-  margin-left: 0.4em;
 }
 #lastTopArticleWrapper {
   margin-bottom: 1em;
@@ -314,4 +312,8 @@ footer div ul li {
   color: white;
   border: 1px solid white;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen (min-width: 576px) {
 }
