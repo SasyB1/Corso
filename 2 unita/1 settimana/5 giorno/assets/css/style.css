@@ -46,7 +46,12 @@ header nav button {
   background-color: rgb(25, 25, 25);
   cursor: pointer;
 }
-
+.navbarScroll {
+  background-color: white;
+}
+.navbarButtonScroll {
+  background-color: green;
+}
 /* Section */
 
 #spotlightContainer {
