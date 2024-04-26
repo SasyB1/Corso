@@ -65,7 +65,7 @@ header nav button {
   position: relative;
   max-width: 40%;
 }
-##spotlightContainer #svgWrapper svg {
+#spotlightContainer #svgWrapper svg {
   position: absolute;
   right: 0;
 }
@@ -349,6 +349,7 @@ footer div ul li {
     font-size: 0.8em;
     font-weight: 700;
   }
+
   #topArticleMedia {
     display: flex;
     justify-content: space-between;
@@ -363,8 +364,14 @@ footer div ul li {
   .mediaChange {
     max-width: 350px;
     display: flex;
-    justify-content: space-between;
   }
+  #topArticleContainer {
+    padding: 2em;
+  }
+  .topArticleWrapper {
+    width: 33%;
+  }
+
   #mediaSwap {
     display: flex;
     flex-direction: row-reverse;
