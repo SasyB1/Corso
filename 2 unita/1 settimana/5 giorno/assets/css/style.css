@@ -349,6 +349,13 @@ footer div ul li {
     font-size: 0.8em;
     font-weight: 700;
   }
+  #spotlightContainer #svgWrapper svg {
+    right: -12.5em;
+  }
+  #spotlightContainer p {
+    width: 60%;
+    font-size: 17px;
+  }
 
   #topArticleMedia {
     display: flex;
@@ -361,6 +368,9 @@ footer div ul li {
   }
 }
 @media screen and (min-width: 1200px) {
+  #spotlightContainer #svgWrapper svg {
+    right: 0;
+  }
   .mediaChange {
     max-width: 350px;
     display: flex;
