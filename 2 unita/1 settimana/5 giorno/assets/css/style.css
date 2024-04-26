@@ -268,15 +268,11 @@ article {
 }
 .contentArticle {
   color: grey;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }
 .marginBottomArticle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 8px;
   margin-top: 2px;
   width: 100%;
@@ -288,6 +284,7 @@ article {
   border-radius: 10px;
 }
 .dateBottomArticle {
+  color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,6 +334,13 @@ footer div ul li {
   }
   #spotlightContainer #svgWrapper {
     display: none;
+  }
+  .contentArticle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
 @media screen and (min-width: 576px) {
@@ -415,19 +419,28 @@ footer div ul li {
     padding-bottom: 2em;
   }
   .bottomArticleContainer {
-    justify-content: space-between;
+    display: flex;
+
+    padding-left: 4.5em;
   }
   .bottomArticleWrapper {
     justify-content: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .lastImageBottomArticle {
+    max-width: 50%;
   }
   .users {
     font-size: 1.2em;
   }
   .titleArticle {
     font-size: 1.5em;
+    width: 90%;
   }
   .contentArticle {
     font-size: 1.2em;
+    width: 90%;
   }
   #collegamentiWrapper button {
     display: none;
