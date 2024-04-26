@@ -22,6 +22,7 @@ header div {
   background-color: #ffc017;
   border-bottom: 1px solid black;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  z-index: 2;
 }
 
 header nav {
@@ -29,9 +30,7 @@ header nav {
   justify-content: center;
   align-items: center;
 }
-header nav ul li:nth-child(-n + 3) {
-  display: none;
-}
+
 nav ul li:nth-child(4) {
   padding-right: 0.9em;
   cursor: pointer;
@@ -55,10 +54,20 @@ header nav button {
 /* Section */
 
 #spotlightContainer {
-  padding-top: 6rem;
   background-color: #ffc017;
   border-bottom: 1px solid black;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3em;
+}
+#spotlightContainer #svgWrapper {
+  position: relative;
+  max-width: 40%;
+}
+##spotlightContainer #svgWrapper svg {
+  position: absolute;
+  right: 0;
 }
 #spotlightContainer div {
   display: flex;
@@ -319,6 +328,30 @@ footer div ul li {
   border-radius: 5px;
   cursor: pointer;
 }
-
-@media screen (min-width: 576px) {
+@media screen and (max-width: 576px) {
+  header nav ul li:nth-child(-n + 3) {
+    display: none;
+  }
+  #spotlightContainer #svgWrapper {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    cursor: pointer;
+    padding-right: 0.8em;
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+  #topArticleMedia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mediaChange {
+    max-width: 260px;
+  }
 }
