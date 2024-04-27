@@ -18,7 +18,6 @@ refreshLogo.addEventListener("click", function () {
   location.reload();
 });
 
-/* navBar alert */
 /* Popup */
 const popupFunction = function alertPopup() {
   const popupContainer = document.createElement("div");
@@ -55,7 +54,7 @@ const popupFunction = function alertPopup() {
   popupContainer.appendChild(popupWrapper);
   popSpawn.appendChild(popupContainer);
 };
-
+/* navBar alert */
 const navBarMenu = document.querySelector("header div nav");
 const popSpawn = document.querySelector("#popSpawn");
 navBarMenu.addEventListener("click", () => {
