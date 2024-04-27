@@ -19,7 +19,7 @@ refreshLogo.addEventListener("click", function () {
 });
 
 /* Popup */
-const popupFunction = function alertPopup() {
+const popupFunction = function () {
   const popupContainer = document.createElement("div");
   popupContainer.id = "popupContainer";
   const popupWrapper = document.createElement("div");
