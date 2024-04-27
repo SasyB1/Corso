@@ -5,11 +5,12 @@ body {
 }
 ul {
   list-style: none;
-  cursor: pointer;
 }
 
 /* Navigation Bar */
-
+header img {
+  cursor: pointer;
+}
 header div {
   position: fixed;
   width: 100vw;
@@ -87,6 +88,7 @@ header nav button {
   text-align: start;
 }
 #spotlightContainer button {
+  cursor: pointer;
   font-size: 20px;
   width: 213px;
   padding: 10px 15px 8px 15px;
@@ -109,7 +111,6 @@ header nav button {
   font-weight: 400;
   margin: 3em 0 0 0;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  cursor: pointer;
   border-bottom: 1px solid grey;
 }
 #topArticleContainer h3 {
@@ -139,6 +140,7 @@ header nav button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 .topArticleItem img {
   max-width: 25px;
@@ -187,6 +189,7 @@ p {
   line-height: 20px;
 }
 #asideTop ul {
+  cursor: pointer;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -222,6 +225,7 @@ p {
 #navbarMiddle nav ul li {
   margin: 10px;
   font-size: 12px;
+  cursor: pointer;
 }
 
 /* bottomArticle */
@@ -240,6 +244,7 @@ article {
 }
 
 .bottomArticleWrapper {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -309,6 +314,7 @@ footer div ul {
 }
 footer div ul li {
   margin-right: 20px;
+  cursor: pointer;
 }
 #collegamentiWrapper {
   padding: 1.5em 0 0 2em;
@@ -421,7 +427,7 @@ footer div ul li {
     flex-direction: column;
     position: sticky;
     top: 0;
-    padding-top: 60px;
+    padding-top: 65px;
   }
   #navbarMiddle {
     position: sticky;
