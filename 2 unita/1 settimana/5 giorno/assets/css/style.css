@@ -64,6 +64,7 @@ header nav button {
 /* Popup */
 
 #popupContainer {
+  animation: delayIn 0.3s linear;
   position: fixed;
   top: 0;
   width: 100%;
