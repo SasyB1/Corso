@@ -3,7 +3,7 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   animation-name: delayIn;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
 }
 ul {
   list-style: none;
