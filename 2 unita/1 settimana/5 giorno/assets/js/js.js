@@ -19,15 +19,61 @@ refreshLogo.addEventListener("click", function () {
 });
 
 /* navBar alert */
+/* Popup */
+const popupFunction = function alertPopup() {
+  const popupContainer = document.createElement("div");
+  popupContainer.id = "popupContainer";
+  const popupWrapper = document.createElement("div");
+  popupWrapper.id = "popupWrapper";
+  const closeButton = document.createElement("button");
+  closeButton.id = "closeButton";
+  closeButton.classList.add("close-button");
+  const closeIcon = document.createElement("i");
+  closeIcon.classList.add("fas", "fa-times");
+  closeButton.appendChild(closeIcon);
+
+  closeButton.addEventListener("click", function () {
+    popupContainer.style.display = "none";
+  });
+
+  const p = document.createElement("p");
+  p.textContent = "Join Medium.";
+  const buttonGoogle = document.createElement("button");
+  buttonGoogle.textContent = " Sign up with Google";
+  buttonGoogle.classList.add("fab", "fa-google");
+  const buttonFacebook = document.createElement("button");
+  buttonFacebook.textContent = " Sign up with Facebook";
+  buttonFacebook.classList.add("fab", "fa-facebook");
+  const buttonEmail = document.createElement("button");
+  buttonEmail.textContent = " Sign up with Email";
+  buttonEmail.classList.add("fab", "fa-envelope");
+  popupWrapper.appendChild(closeButton);
+  popupWrapper.appendChild(p);
+  popupWrapper.appendChild(buttonGoogle);
+  popupWrapper.appendChild(buttonFacebook);
+  popupWrapper.appendChild(buttonEmail);
+  popupContainer.appendChild(popupWrapper);
+  popSpawn.appendChild(popupContainer);
+};
+
 const navBarMenu = document.querySelector("header div nav");
+const popSpawn = document.querySelector("#popSpawn");
 navBarMenu.addEventListener("click", () => {
-  alert("Registrati");
+  if (window.innerWidth > 1200) {
+    popupFunction();
+  } else {
+    alert("Registrati");
+  }
 });
 
 /* button h1 */
 const buttonH1 = document.querySelector("#spotlightContainer button");
 buttonH1.addEventListener("click", () => {
-  alert("Registrati");
+  if (window.innerWidth > 1200) {
+    popupFunction();
+  } else {
+    alert("Registrati");
+  }
 });
 
 /* M */
@@ -81,13 +127,21 @@ articleTop6.addEventListener("click", () => {
 const asideTopItems = document.querySelectorAll("#asideTop ul li");
 asideTopItems.forEach((item) => {
   item.addEventListener("click", () => {
-    alert("Registrati");
+    if (window.innerWidth > 1200) {
+      popupFunction();
+    } else {
+      alert("Registrati");
+    }
   });
 });
 const asideBotItems = document.querySelectorAll("#navbarMiddle nav ul li");
 asideBotItems.forEach((item) => {
   item.addEventListener("click", () => {
-    alert("Registrati");
+    if (window.innerWidth > 1200) {
+      popupFunction();
+    } else {
+      alert("Registrati");
+    }
   });
 });
 
@@ -138,7 +192,11 @@ articleBottom7.addEventListener("click", () => {
 const footerInfo = document.querySelectorAll("footer div ul li");
 footerInfo.forEach((item) => {
   item.addEventListener("click", () => {
-    alert("Registrati");
+    if (window.innerWidth > 1200) {
+      popupFunction();
+    } else {
+      alert("Registrati");
+    }
   });
 });
 
