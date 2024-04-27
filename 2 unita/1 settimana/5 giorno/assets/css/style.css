@@ -386,6 +386,10 @@ footer div ul li {
   }
 }
 @media screen and (min-width: 1200px) {
+  #spotlightContainer div {
+    margin-left: 4em;
+  }
+
   #spotlightContainer #svgWrapper svg {
     right: 0;
   }
