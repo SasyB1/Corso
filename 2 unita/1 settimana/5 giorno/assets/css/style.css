@@ -354,6 +354,22 @@ footer div ul li {
   #spotlightContainer #svgWrapper svg {
     right: -12.5em;
   }
+
+  @keyframes mAnimation {
+    0% {
+      opacity: 100%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  .mHidden {
+    animation: mAnimation 4s linear 0s infinite;
+  }
+
   #spotlightContainer p {
     width: 60%;
     font-size: 17px;

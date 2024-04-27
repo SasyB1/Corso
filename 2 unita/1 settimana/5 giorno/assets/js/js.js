@@ -12,6 +12,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
+/* M */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mContainer = document.querySelector("svg > g ");
+  const mWrapper = mContainer.querySelectorAll("[aria-label]");
+  mWrapper.forEach((singleM) => {
+    singleM.classList.add("mHidden");
+  });
+});
+
 /* Footer Button */
 const appStoreButton = document.getElementById("appStoreButton");
 appStoreButton.addEventListener("click", () => {
