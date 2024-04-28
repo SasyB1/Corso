@@ -38,14 +38,26 @@ const popupFunction = function () {
   const p = document.createElement("p");
   p.textContent = "Join Medium.";
   const buttonGoogle = document.createElement("button");
+  buttonGoogle.id = "buttonGoogle";
   buttonGoogle.textContent = " Sign up with Google";
   buttonGoogle.classList.add("fab", "fa-google");
+  buttonGoogle.addEventListener("click", () => {
+    window.open("https://www.google.com/", "_blank");
+  });
   const buttonFacebook = document.createElement("button");
+  buttonFacebook.id = "buttonFacebook";
   buttonFacebook.textContent = " Sign up with Facebook";
   buttonFacebook.classList.add("fab", "fa-facebook");
+  buttonFacebook.addEventListener("click", () => {
+    window.open("https://www.facebook.com/", "_blank");
+  });
   const buttonEmail = document.createElement("button");
-  buttonEmail.textContent = " Sign up with Email";
-  buttonEmail.classList.add("fab", "fa-envelope");
+  buttonEmail.id = "buttonEmail";
+  buttonEmail.textContent = " Sign up with  Email";
+  buttonEmail.classList.add("fa-solid", "fa-envelope");
+  buttonEmail.addEventListener("click", () => {
+    window.open("https://mail.google.com/", "_blank");
+  });
   popupWrapper.appendChild(closeButton);
   popupWrapper.appendChild(p);
   popupWrapper.appendChild(buttonGoogle);
@@ -54,6 +66,7 @@ const popupFunction = function () {
   popupContainer.appendChild(popupWrapper);
   popSpawn.appendChild(popupContainer);
 };
+
 /* navBar alert */
 const navBarMenu = document.querySelector("header div nav");
 const popSpawn = document.querySelector("#popSpawn");
