@@ -1,0 +1,59 @@
+header {
+  div {
+    padding: 1em 2em 2em 2em;
+    img {
+      @include marginPage;
+    }
+    ul {
+      li {
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+main {
+  section {
+    margin: 0 2em 0 1em;
+    height: 70vh;
+    h1 {
+      margin-top: 1em;
+      padding-right: 6em;
+    }
+    div {
+      margin-left: 0.5em;
+    }
+  }
+}
+footer {
+  margin-top: 6em;
+  @include marginPage;
+  padding-bottom: 2em;
+}
+
+$value-map: (
+  sm: 12px,
+  normal: 12px,
+  md: 15px,
+  lg: 18px,
+  xl: 36px,
+  xxl: 50px,
+);
+
+$display-map: (
+  inline: inline,
+  block: block,
+);
+
+@each $size, $value in $value-map {
+  @each $display-size, $display-value in $display-map {
+    .padding-#{$size}-#{$display-size} {
+      padding: #{$value};
+      display: $display-value;
+    }
+    .margin-#{$size}-#{$display-size} {
+      margin: #{$value};
+      display: $display-value;
+    }
+  }
+}

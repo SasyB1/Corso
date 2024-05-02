@@ -1,0 +1,50 @@
+header {
+  div {
+    @include displayFlex;
+    justify-content: space-between;
+    align-items: center;
+    @include bodyColor;
+    ul {
+      @include displayFlex;
+      li {
+        list-style-type: none;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+main {
+  @include displayFlex;
+  @include bodyColor;
+  section {
+    text-align: start;
+    @include title-big;
+    position: relative;
+    color: black;
+    h1 {
+      @include fadeIn;
+    }
+    div {
+      button {
+        @include fadeIn;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: -50px;
+      right: 0;
+      @include floating(8px 16px 20px 4px);
+      @include fadeIn;
+    }
+  }
+}
+footer {
+  @include grid;
+  img {
+    @include floating(2px 10px 5px 2px);
+  }
+}

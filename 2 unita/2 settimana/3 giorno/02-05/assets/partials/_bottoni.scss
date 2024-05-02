@@ -1,0 +1,21 @@
+main {
+  section {
+    button {
+      border: none;
+      padding: 1em;
+      background-color: lighten;
+      color: white;
+    }
+  }
+}
+
+$color-map: (
+  first: #0e6cff,
+  second: #ff8700,
+  third: #4caf50,
+);
+@each $color, $value in $color-map {
+  .color-#{$color} {
+    background-color: #{$value};
+  }
+}

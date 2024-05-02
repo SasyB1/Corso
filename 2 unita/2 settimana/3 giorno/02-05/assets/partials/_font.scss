@@ -1,0 +1,10 @@
+$font-sizes: (
+  sm: 16px,
+  normal: 32px,
+  md: 48px,
+  xl: 55px,
+  xxl: 60px,
+);
+@mixin title-big {
+  font-size: 3em;
+}
