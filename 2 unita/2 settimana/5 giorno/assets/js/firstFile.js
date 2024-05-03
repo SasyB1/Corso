@@ -16,10 +16,10 @@ Array.from(cardAccounts).forEach((element, i) => {
   });
 });
 
-let addedIcons = true;
-
 const buttonFirstPage = document.querySelector(".buttonFirstPage");
 const buttonEdit = document.querySelectorAll(".buttonEdit");
+
+let addedIcons = true;
 
 buttonFirstPage.addEventListener("click", function () {
   if (addedIcons) {
@@ -28,12 +28,18 @@ buttonFirstPage.addEventListener("click", function () {
       imageEdit.classList.add("bi", "bi-pencil", "editFirstImage");
       button.appendChild(imageEdit);
     });
+    for (let i = 0; i < imgAccounts.length; i++) {
+      imgAccounts[i].style.opacity = "0.5";
+    }
     addedIcons = false;
   } else {
     const editIcons = document.querySelectorAll(".editFirstImage");
     editIcons.forEach((icon) => {
       icon.remove();
     });
+    for (let i = 0; i < imgAccounts.length; i++) {
+      imgAccounts[i].style.opacity = "";
+    }
     addedIcons = true;
   }
 });
