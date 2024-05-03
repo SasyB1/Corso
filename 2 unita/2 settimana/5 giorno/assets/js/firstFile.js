@@ -25,12 +25,12 @@ buttonFirstPage.addEventListener("click", function () {
   if (addedIcons) {
     buttonEdit.forEach((button) => {
       const imageEdit = document.createElement("i");
-      imageEdit.classList.add("bi", "bi-pencil", "editFirstImage", "editIcon");
+      imageEdit.classList.add("bi", "bi-pencil", "editFirstImage");
       button.appendChild(imageEdit);
     });
     addedIcons = false;
   } else {
-    const editIcons = document.querySelectorAll(".editIcon");
+    const editIcons = document.querySelectorAll(".editFirstImage");
     editIcons.forEach((icon) => {
       icon.remove();
     });
