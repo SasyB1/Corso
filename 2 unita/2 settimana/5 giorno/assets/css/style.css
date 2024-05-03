@@ -1,20 +1,30 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 #titleFirstPage {
   font-size: 30px;
 }
+
 @media screen and (min-width: 576px) {
   #titleFirstPage {
     font-size: 40px;
   }
 }
+
 .cardAccount {
   cursor: pointer;
 }
+
 .imgAccount {
   width: 85px;
 }
+
 .titleAccount {
   font-size: 12px;
 }
+
 .buttonFirstPage {
   font-size: 13px;
 }
@@ -27,9 +37,20 @@
   color: white !important;
   font-weight: 500;
 }
+
 .editFirstImage {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.titleLanguageDecision {
+  font-size: 14px;
+}
+.languageDecision {
+  font-size: 12px;
+}
+
+.modifyProfile {
+  width: 55%;
 }

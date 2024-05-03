@@ -43,3 +43,5 @@ buttonFirstPage.addEventListener("click", function () {
     addedIcons = true;
   }
 });
+
+const modificaProfilo = function () {};
