@@ -1,0 +1,35 @@
+#titleFirstPage {
+  font-size: 30px;
+}
+@media screen and (min-width: 576px) {
+  #titleFirstPage {
+    font-size: 40px;
+  }
+}
+.cardAccount {
+  cursor: pointer;
+}
+.imgAccount {
+  width: 85px;
+}
+.titleAccount {
+  font-size: 12px;
+}
+.buttonFirstPage {
+  font-size: 13px;
+}
+
+.borderImageAccount {
+  border: 2px solid white;
+}
+
+.colorTitleAccount {
+  color: white !important;
+  font-weight: 500;
+}
+.editFirstImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

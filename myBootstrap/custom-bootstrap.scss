@@ -1,0 +1,14 @@
+@import "scss/functions";
+@import "scss/variables";
+
+$new-netflixFirst: #141414;
+$new-netflixSecond: #c4c4c4;
+
+$new-theme-colors: (
+  "netflixFirst": $new-netflixFirst,
+  "netflixSecond": $new-netflixSecond,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import "scss/bootstrap.scss";
