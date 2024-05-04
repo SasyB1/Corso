@@ -70,3 +70,15 @@ body {
   width: 25px;
   height: 25px;
 }
+@media screen and (min-width: 992px) {
+  .mainMD {
+    width: 70vw;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mainMD {
+    width: 40vw;
+    margin: auto;
+  }
+}
