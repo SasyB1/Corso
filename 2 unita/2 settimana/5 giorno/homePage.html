@@ -34,32 +34,39 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-netflixSecond"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-netflixSecond" href="#">TV Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-netflixSecond" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-netflixSecond" href="#"
-                  >Recently added</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-netflixSecond" href="#">My list</a>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center align-items-center">
+          <div
+            class="collapse navbar-collapse justify-content-md-between"
+            id="navbarSupportedContent"
+          >
+            <div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-netflixSecond"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#"
+                    >Recently added</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#">My list</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="d-flex justify-content-evenly flex-row-reverse flex-md-row justify-lg-content-center align-items-center"
+            >
               <i class="bi bi-search text-netflixSecond me-3"></i>
               <p class="text-netflixSecond m-0 me-3">KIDS</p>
               <i class="bi bi-bell-fill text-netflixSecond me-3"></i>
@@ -70,7 +77,7 @@
               />
               <div class="dropdown me-5">
                 <a
-                  class="btn text-netflixSecond dropdown-toggle me-4"
+                  class="btn text-netflixSecond dropdown-toggle me-md-4"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -99,15 +106,15 @@
     </header>
     <main class="mainHomepage">
       <section>
-        <div class="container-fluid mt-5">
+        <div class="container-fluid mt-3 mt-lg-5">
           <div class="row">
             <div class="col d-flex align-items-center">
-              <h2 class="m-0 me-3 p-0 text-light fontTitleHomePage">
+              <h2 class="m-0 me-2 me-md-3 p-0 text-light fontTitleHomePage">
                 TV Shows
               </h2>
               <div class="dropdown">
                 <button
-                  class="btn btn-netflixFirst dropdown-toggle py-2 px-3 border-light rounded-0 languageDecision"
+                  class="btn btn-netflixFirst dropdown-toggle py-md-2 px--md-3 border-light rounded-0 languageDecision"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -125,18 +132,304 @@
                 </ul>
               </div>
             </div>
-            <div class="col d-flex justify-content-end">
-              <i class="bi bi-list text-netflixSecond p-2 me-1"></i>
-              <i class="bi bi-grid-fill text-netflixSecond p-2"></i>
+            <div class="col d-flex justify-content-end align-items-center">
+              <i class="bi bi-list text-netflixSecond p-1 p-md-2 me-1"></i>
+              <i class="bi bi-grid-fill text-netflixSecond p-1 p-md-2"></i>
             </div>
           </div>
         </div>
       </section>
+      <article class="mt-5">
+        <div class="text-netflixSecond">
+          <h2 class="fontTitleHomePage">Trending Now</h2>
+        </div>
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner custom-carousel px-2 overflow-visible">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media0.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item imgCar">
+              <div class="row">
+                <div class="col px-1">
+                  <img
+                    src="./assets/image/media4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
+      <article class="mt-4">
+        <div class="text-netflixSecond">
+          <h2 class="fontTitleHomePage">Watch it again</h2>
+        </div>
+        <div
+          id="carouselExampleAutoplaying2"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner custom-carousel px-2 overflow-visible">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item imgCar">
+              <div class="row">
+                <div class="col px-1">
+                  <img
+                    src="./assets/image/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media12.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
+      <article class="mt-4">
+        <div class="text-netflixSecond">
+          <h2 class="fontTitleHomePage">Watch it again</h2>
+        </div>
+        <div
+          id="carouselExampleAutoplaying3"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner custom-carousel px-2 overflow-visible">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media12.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media13.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media14.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media15.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item imgCar">
+              <div class="row">
+                <div class="col px-1">
+                  <img
+                    src="./assets/image/media16.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media17.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media18.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col px-1 imgCar">
+                  <img
+                    src="./assets/image/media19.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/homePage.js"></script>
   </body>
 </html>

@@ -88,11 +88,20 @@ a {
 }
 /*------------------------------ HOMEPAGE------------------------------ */
 .bodyHomepage {
-  padding: 0 45px 0 45px;
+  padding: 0 10px 0 10px;
 }
-.mainHomepage {
-  padding-right: 70px;
+@media screen and (min-width: 992px) {
+  .bodyHomepage {
+    padding: 0 45px 0 45px;
+  }
+  .mainHomepage {
+    padding-right: 70px;
+  }
+  .fontTitleHomePage {
+    font-size: 30px;
+  }
 }
+
 .profileImageHomepage {
   width: 35px;
 }
@@ -106,11 +115,30 @@ a {
 }
 
 .fontTitleHomePage {
-  font-size: 30px;
+  font-size: 16px !important;
+}
+.imgCarousel {
+  max-width: 95px;
 }
 
+.carusielloHidden {
+  overflow: hidden !important;
+}
 section {
   i {
     border: 1px solid grey;
   }
+}
+
+.custom-carousel .carousel-item img {
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.custom-carousel .carousel-item img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.carousel-inner:has(img:hover) img:not(:hover) {
+  opacity: 0.1;
 }
