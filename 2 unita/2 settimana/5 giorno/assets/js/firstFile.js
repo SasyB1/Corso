@@ -27,6 +27,9 @@ buttonFirstPage.addEventListener("click", function () {
       const imageEdit = document.createElement("i");
       imageEdit.classList.add("bi", "bi-pencil", "editFirstImage");
       button.appendChild(imageEdit);
+      imageEdit.addEventListener("click", () => {
+        window.location.href = "modificaProfilo.html";
+      });
     });
     for (let i = 0; i < imgAccounts.length; i++) {
       imgAccounts[i].style.opacity = "0.5";
@@ -43,5 +46,3 @@ buttonFirstPage.addEventListener("click", function () {
     addedIcons = true;
   }
 });
-
-const modificaProfilo = function () {};
