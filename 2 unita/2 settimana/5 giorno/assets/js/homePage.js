@@ -1,36 +1,19 @@
-const nextPageCarousel = document.querySelectorAll(
-  ".carousel-control-next-icon"
-);
-const prevPageCarousel = document.querySelectorAll(
-  ".carousel-control-prev-icon"
-);
+const imgCar = document.querySelectorAll("img");
 
-prevPageCarousel.forEach((prevButton) => {
-  let timeoutId;
-  prevButton.addEventListener("click", () => {
-    const carousel = prevButton.closest(".carousel");
-    const imgCarousel = carousel.querySelector(".custom-carousel");
-    imgCarousel.classList.add("carusielloHidden");
-    if (timeoutId) {
-      clearTimeout(timeoutId);
+imgCar.forEach((img) => {
+  img.addEventListener("mouseover", () => {
+    const carouselInner = img.closest(".carousel-inner");
+    if (carouselInner) {
+      carouselInner.classList.add("carusielVisible");
     }
-    timeoutId = setTimeout(() => {
-      imgCarousel.classList.remove("carusielloHidden");
-    }, 500);
   });
 });
 
-nextPageCarousel.forEach((nextButton) => {
-  let timeoutId;
-  nextButton.addEventListener("click", () => {
-    const carousel = nextButton.closest(".carousel");
-    const imgCarousel = carousel.querySelector(".custom-carousel");
-    imgCarousel.classList.add("carusielloHidden");
-    if (timeoutId) {
-      clearTimeout(timeoutId);
+imgCar.forEach((img) => {
+  img.addEventListener("mouseout", () => {
+    const carouselInner = img.closest(".carousel-inner");
+    if (carouselInner) {
+      carouselInner.classList.remove("carusielVisible");
     }
-    timeoutId = setTimeout(() => {
-      imgCarousel.classList.remove("carusielloHidden");
-    }, 500);
   });
 });

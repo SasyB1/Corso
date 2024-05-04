@@ -120,9 +120,8 @@ a {
 .imgCarousel {
   max-width: 95px;
 }
-
-.carusielloHidden {
-  overflow: hidden !important;
+.carusielVisible {
+  overflow: visible !important;
 }
 section {
   i {
