@@ -3,6 +3,7 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+/*------------------------------ PAGINA DI SCELTA ACCOUNT------------------------------ */
 #titleFirstPage {
   font-size: 30px;
 }
@@ -51,6 +52,21 @@ body {
   font-size: 12px;
 }
 
-.modifyProfile {
-  width: 55%;
+/*------------------------------ PAGINA DI MODIFICA ACCOUNT------------------------------ */
+
+.logoWidth {
+  width: 150px;
+}
+.paddingInput {
+  padding: 1px 1px 1px 5px;
+}
+
+::placeholder {
+  color: white;
+  font-size: 14px;
+}
+
+.customCheckbox {
+  width: 25px;
+  height: 25px;
 }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Salvatore Buonaiuto" />
+    <link rel="shortcut icon" href="./assets/image/faviconNetflix.png" />
+    <link rel="stylesheet" href="./assets/css/custom-bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Manage Profile</title>
+  </head>
+  <body class="bg-netflixFirst">
+    <header>
+      <div class="container px-4">
+        <div class="row">
+          <div class="col-3">
+            <img
+              src="./assets/image/netflix_logo.png"
+              class="logoWidth"
+              alt="Netflix Logo"
+            />
+          </div>
+          <div class="col-12 mt-4 text-netflixSecond ps-4">
+            <h1>Edit Profile</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container px-5">
+        <div class="row border-top border-netflixSecond">
+          <div class="col-4 mt-3">
+            <div class="position-relative">
+              <img
+                src="./assets/image/avatar.png"
+                class="imgAccount"
+                alt="Immagine Profilo"
+              />
+              <i
+                class="bi bi-pencil-fill position-absolute titleAccount bottom-0 start-0 bg-netflixFirst rounded-circle px-2 py-1 mb-1 ms-1 border border-1 border-light text-light"
+              ></i>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="row">
+              <input
+                type="text"
+                placeholder="Strive Student"
+                class="bg-netflixSecond paddingInput border-0"
+              />
+              <div class="col-12 p-0 mt-3 text-netflixSecond">
+                <p class="mb-1">language:</p>
+              </div>
+              <div class="col-12 p-0 border-bottom pb-3">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-netflixFirst dropdown-toggle py-1 px-3 border-light rounded-0 languageDecision"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Italian
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Turkish</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">French</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 mt-3 p-0 text-netflixSecond">
+                <p>Maturity Setting</p>
+              </div>
+              <div class="col-12 p-0 titleLanguageDecision">
+                <button class="py-1 fw-bold text-light bg-secondary border-0">
+                  ALL MATURITY SETTINGS
+                </button>
+              </div>
+              <div
+                class="col-12 text-netflixSecond titleLanguageDecision p-0 mt-3"
+              >
+                <p>Show title of all maturity rating for this profile.</p>
+              </div>
+              <div class="col-12 p-0 border-bottom pb-3">
+                <button
+                  class="bg-netflixFirst text-netflixSecond border-netflixSecond border-opacity-50 text-opacity-50 p-1 px-3"
+                >
+                  EDIT
+                </button>
+              </div>
+              <div class="col-12 text-netflixSecond p-0 mt-3">
+                <p>Autoplay controls</p>
+              </div>
+              <div class="col-2 p-0">
+                <input class="customCheckbox" type="checkbox" />
+              </div>
+              <div class="col-10 p-0 languageDecision">
+                <p class="text-netflixSecond">
+                  Autoplay next episode in a series on all devices.
+                </p>
+              </div>
+              <div class="col-2 p-0">
+                <input class="customCheckbox" type="checkbox" />
+              </div>
+              <div class="col-10 p-0 languageDecision">
+                <p class="text-netflixSecond">
+                  Autoplay preview while browsing on all devices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-5">
+        <div class="row border-top pt-3 border-netflixSecond">
+          <div class="col p-0 d-flex me-3">
+            <button
+              class="btn border-netflixSecond rounded-0 border-opacity-50 text-netflixSecond text-opacity-50 w-100 cardAccount"
+            >
+              SAVE
+            </button>
+          </div>
+          <div class="col p-0 d-flex me-3">
+            <button
+              class="btn border-netflixSecond rounded-0 border-opacity-50 text-netflixSecond text-opacity-50 w-100 cardAccount"
+            >
+              CANCEL
+            </button>
+          </div>
+          <div class="col p-0 d-flex">
+            <button
+              class="btn border-netflixSecond rounded-0 border-opacity-50 text-netflixSecond text-opacity-50 w-100 cardAccount"
+            >
+              DELETE PROFILE
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
