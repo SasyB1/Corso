@@ -14,7 +14,7 @@
     />
     <title>Homepage Netflix</title>
   </head>
-  <body class="bg-netflixFirst ms-5 me-5">
+  <body class="bg-netflixFirst bodyHomepage">
     <header>
       <nav class="navbar navbar-expand-lg bg-netflixFirst">
         <div class="container-fluid">
@@ -97,6 +97,42 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section>
+        <div class="container-fluid mt-5">
+          <div class="row">
+            <div class="col d-flex align-items-center">
+              <h2 class="m-0 me-3 p-0 text-light fontTitleHomePage">
+                TV Shows
+              </h2>
+              <div class="dropdown">
+                <button
+                  class="btn btn-netflixFirst dropdown-toggle py-2 px-3 border-light rounded-0 languageDecision"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Genres
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Horror</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Anime</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+              <i class="bi bi-list text-netflixSecond p-2 me-1"></i>
+              <i class="bi bi-grid-fill text-netflixSecond p-2"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

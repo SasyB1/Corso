@@ -87,6 +87,9 @@ a {
   }
 }
 /*------------------------------ HOMEPAGE------------------------------ */
+.bodyHomepage {
+  padding: 0 45px 0 45px;
+}
 .profileImageHomepage {
   width: 35px;
 }
@@ -97,4 +100,14 @@ a {
 
 .imgLogo {
   width: 120px;
+}
+
+.fontTitleHomePage {
+  font-size: 30px;
+}
+
+section {
+  i {
+    border: 1px solid grey;
+  }
 }
