@@ -90,6 +90,9 @@ a {
 .bodyHomepage {
   padding: 0 45px 0 45px;
 }
+.mainHomepage {
+  padding-right: 70px;
+}
 .profileImageHomepage {
   width: 35px;
 }
