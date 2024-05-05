@@ -27,8 +27,10 @@ buttonFirstPage.addEventListener("click", function () {
       const imageEdit = document.createElement("i");
       imageEdit.classList.add("bi", "bi-pencil", "editFirstImage");
       button.appendChild(imageEdit);
-      imageEdit.addEventListener("click", () => {
-        window.location.href = "modificaProfilo.html";
+      Array.from(cardAccounts).forEach((element) => {
+        element.addEventListener("click", () => {
+          window.location.href = "modificaProfilo.html";
+        });
       });
     });
     for (let i = 0; i < imgAccounts.length; i++) {
@@ -45,4 +47,10 @@ buttonFirstPage.addEventListener("click", function () {
     }
     addedIcons = true;
   }
+});
+
+Array.from(cardAccounts).forEach((element) => {
+  element.addEventListener("click", () => {
+    window.location.href = "homePage.html";
+  });
 });
