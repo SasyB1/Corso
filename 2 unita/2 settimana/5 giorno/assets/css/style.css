@@ -103,6 +103,7 @@ i {
   .navSearch {
     display: block !important;
   }
+
   .mainHomepage {
     padding-right: 70px;
   }
@@ -110,13 +111,8 @@ i {
     font-size: 30px;
   }
 }
-
 .profileImageHomepage {
   width: 35px;
-}
-
-.bodyWidth {
-  width: 90vw;
 }
 
 .imgLogo {
