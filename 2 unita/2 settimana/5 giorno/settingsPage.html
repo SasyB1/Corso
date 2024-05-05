@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Salvatore Buonaiuto" />
+    <link rel="shortcut icon" href="./assets/image/faviconNetflix.png" />
+    <link rel="stylesheet" href="./assets/css/custom-bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Settings Netflix</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-netflixFirst">
+        <div class="container-fluid">
+          <img
+            src="./assets/image/netflix_logo.png"
+            class="imgLogo me-3"
+            alt="Logo netflix"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-md-between"
+            id="navbarSupportedContent"
+          >
+            <div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-netflixSecond"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#"
+                    >Recently added</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-netflixSecond" href="#">My list</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="d-flex justify-content-evenly flex-row-reverse flex-md-row justify-lg-content-center align-items-center"
+            >
+              <i
+                class="bi bi-search text-netflixSecond me-3 d-flex justify-content-end align-items-center"
+              >
+                <input
+                  class="d-none w-50 ms-2 languageDecision bg-netflixSecond pt-1 ps-1"
+                  type="text"
+                  placeholder="Search..."
+              /></i>
+
+              <p class="text-netflixSecond m-0 me-3 kidsInterface cardAccount">
+                KIDS
+              </p>
+
+              <img
+                src="./assets/image/avatar.png"
+                class="profileImageHomepage me-3"
+                alt="Immagine profilo"
+              />
+              <div class="dropdown me-5">
+                <a
+                  class="btn text-netflixSecond dropdown-toggle me-md-4"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                </a>
+
+                <ul class="dropdown-menu bg-netflixSecond border-netflixSecond">
+                  <li>
+                    <a class="dropdown-item text-black" href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-black" href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-black" href="#"
+                      >Change profile</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="SettingsMain">
+      <div class="container">
+        <div class="row px-2 justify-content-center">
+          <div class="col mt-5 border-bottom border-2">
+            <h1 class="titleSettings">Account</h1>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-md-4 text-center">
+            <div class="row flex-column">
+              <div class="col">
+                <p class="bigContent text-netflixSecond">
+                  MEMBERSHIP & BILLING
+                </p>
+              </div>
+              <div
+                class="col d-flex justify-content-center mb-md-3 ms-md-3 mb-3"
+              >
+                <button
+                  class="text-dark contentFont border border-none bg-netflixSecond p-1 px-2"
+                >
+                  Cancel Membership
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 border-bottom border-2">
+            <div class="row flex-column">
+              <div class="col p-0">
+                <p class="contentFont text-netflixFirst textBold m-0 mb-1">
+                  student@strive.school
+                </p>
+              </div>
+              <div class="col p-0">
+                <p class="contentFont text-netflixSecond m-0 mb-1">
+                  Password: *******
+                </p>
+              </div>
+              <div class="col p-0">
+                <p class="contentFont text-netflixSecond m-0">
+                  Phone: 321 044 12789
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 border-bottom border-2">
+            <div class="row flex-column text-end">
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-1">
+                  Change account email
+                </p>
+              </div>
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-1">Change password</p>
+              </div>
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0">Change phone number</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div
+            class="col-6 col-md-4 d-flex align-items mt-2 p-0 border-bottom border-2"
+          >
+            <i class="bi bi-paypal me-1"></i>
+            <p class="contentFont text-netflixFirst textBold m-0 pt-1 mb-1">
+              admin@strive.school
+            </p>
+          </div>
+          <div
+            class="col-6 col-md-4 d-flex flex-column pe-2 mt-2 p-0 border-bottom border-2"
+          >
+            <div class="row flex-column text-end">
+              <p class="contentFont text-info m-0 mb-1">Update payment info</p>
+              <p class="contentFont text-info m-0 mb-3">Billing detalis</p>
+            </div>
+          </div>
+          <div class="col-4 border-bottom border-2"></div>
+          <div class="col-4 border-bottom border-2"></div>
+          <div
+            class="col-4 d-flex flex-column pe-2 mt-2 p-0 border-bottom border-2"
+          >
+            <div class="row flex-column text-end">
+              <p class="contentFont text-info m-0 mb-1">
+                Redeem gift card or promo code
+              </p>
+              <p class="contentFont text-info m-0 mb-3">
+                Where to buy gift cards
+              </p>
+            </div>
+          </div>
+          <div class="col-4 mt-3 align-items-center border-bottom border-2">
+            <p class="bigContent text-netflixSecond">PLAN DETAILS</p>
+          </div>
+          <div
+            class="col-4 d-flex mt-2 align-items-center border-bottom border-2"
+          >
+            <p class="contentFont text-netflixFirst textBold m-0 mb-1 me-1">
+              Premium
+            </p>
+            <i class="bi bi-badge-hd"></i>
+          </div>
+          <div class="col-4 text-end pe-2 mt-3 p-0 border-bottom border-2">
+            <p class="contentFont text-info m-0">Change plan</p>
+          </div>
+          <div class="col-4 mt-2 align-items-center border-bottom border-2">
+            <p class="bigContent text-netflixSecond">SETTINGS</p>
+          </div>
+          <div class="col-4 border-bottom border-2 mt-2">
+            <div class="row flex-column">
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-1">Parental controls</p>
+              </div>
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-1">Test participation</p>
+              </div>
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-1">
+                  Manage download devices
+                </p>
+              </div>
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-1">Activate a device</p>
+              </div>
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-1">
+                  Recent device streaming activity
+                </p>
+              </div>
+              <div class="col pe-2">
+                <p class="contentFont text-info m-0 mb-2">
+                  Sign out of all devices
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 border-bottom border-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-4 mt-2 align-items-center">
+            <p class="bigContent text-netflixSecond m-0">MY PROFILE</p>
+          </div>
+          <div class="col-4 d-flex mt-2 align-items-center">
+            <img
+              src="./assets/image/avatar.png"
+              class="imgSize me-1 rounded-3"
+              alt=""
+            />
+            <p class="contentFont text-netflixFirst textBold m-0 me-1 mt">
+              Strive Student
+            </p>
+          </div>
+          <div class="col-4 text-end pe-2 mt-2 p-0">
+            <p class="contentFont text-info m-0">Manage profiles</p>
+            <p class="contentFont text-info m-0">Add profile email</p>
+          </div>
+          <div class="col-4"></div>
+          <div class="col-4 mt-3">
+            <div class="row flex-column">
+              <div class="col">
+                <p class="contentFont text-info m-0 mb-1">Language</p>
+              </div>
+              <div class="col">
+                <p class="contentFont text-info m-0 mb-1">Playback settings</p>
+              </div>
+              <div class="col">
+                <p class="contentFont text-info m-0 mb-1">
+                  Subtitle appearance
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 mt-3">
+            <div class="row flex-column">
+              <div class="col">
+                <p class="contentFont text-info m-0 mb-1">Viewing activity</p>
+              </div>
+              <div class="col">
+                <p class="contentFont text-info m-0 mb-5">Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
