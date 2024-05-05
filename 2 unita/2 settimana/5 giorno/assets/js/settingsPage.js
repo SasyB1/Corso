@@ -1,10 +1,3 @@
-// ------------------- REFRESH LOGO ----------------------------
-const refreshLogo = document.querySelector("header img");
-refreshLogo.addEventListener("click", function () {
-  location.reload();
-});
-
-// ------------------- NAV BAR ----------------------------
 const navbarNav = document.querySelectorAll(".navbar-nav li a");
 
 navbarNav.forEach((navGenere) => {
@@ -43,41 +36,24 @@ changeProfileNavigation.addEventListener("click", () => {
   window.location.href = "index.html";
 });
 
-const imgDinamicModifyProfile = document.querySelector(".profileImageHomepage");
+const imgDinamicModifyProfile = document.querySelectorAll(
+  ".profileImageHomepage"
+);
 document.addEventListener("DOMContentLoaded", function () {
-  const imgSrc = localStorage.getItem("imgDinamicProfil");
-  imgDinamicModifyProfile.setAttribute("src", imgSrc);
+  imgDinamicModifyProfile.forEach((img) => {
+    const imgSrc = localStorage.getItem("imgDinamicProfil");
+    img.setAttribute("src", imgSrc);
+  });
 });
 
 const kidInterface = document.querySelector(".kidsInterface");
 kidInterface.addEventListener("click", () => {
-  imgDinamicModifyProfile.setAttribute("src", "./assets/image/kids_icon.png");
-});
-// ------------------- CAROUSEL ----------------------------
-const genereDinamic = document.querySelector(".genereDinamic");
-navbarNav.forEach((genere) => {
-  genere.addEventListener("click", () => {
-    const clickedText = genere.textContent;
-    genereDinamic.innerText = clickedText;
-    navbarNav.forEach((link) => {
-      link.classList.remove("genereChoice");
-    });
-    genere.classList.add("genereChoice");
+  imgDinamicModifyProfile.forEach((img) => {
+    img.setAttribute("src", "./assets/image/kids_icon.png");
   });
 });
 
-const imgCar = document.querySelectorAll("img");
-
-imgCar.forEach((img) => {
-  img.addEventListener("mouseover", () => {
-    const carouselInner = img.closest(".carousel-inner");
-    carouselInner.classList.add("carusielVisible");
-  });
-});
-
-imgCar.forEach((img) => {
-  img.addEventListener("mouseout", () => {
-    const carouselInner = img.closest(".carousel-inner");
-    carouselInner.classList.remove("carusielVisible");
-  });
+const footerButton = document.querySelector("footer button");
+footerButton.addEventListener("click", () => {
+  window.location.href = "homePage.html";
 });

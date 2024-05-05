@@ -204,3 +204,6 @@ section {
     margin: auto;
   }
 }
+.pointerCursor {
+  cursor: pointer;
+}
