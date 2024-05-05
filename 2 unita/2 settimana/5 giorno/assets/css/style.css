@@ -6,7 +6,9 @@ body {
 a {
   font-size: 14px !important;
 }
-
+i {
+  cursor: pointer;
+}
 /*------------------------------ PAGINA DI SCELTA ACCOUNT------------------------------ */
 #titleFirstPage {
   font-size: 30px;
@@ -93,6 +95,13 @@ a {
 @media screen and (min-width: 992px) {
   .bodyHomepage {
     padding: 0 45px 0 45px;
+  }
+  .navFocus {
+    color: white !important;
+    opacity: 1;
+  }
+  .navSearch {
+    display: block !important;
   }
   .mainHomepage {
     padding-right: 70px;
