@@ -123,6 +123,9 @@ i {
   width: 120px;
 }
 
+.genereChoice {
+  color: white !important;
+}
 .fontTitleHomePage {
   font-size: 16px !important;
 }

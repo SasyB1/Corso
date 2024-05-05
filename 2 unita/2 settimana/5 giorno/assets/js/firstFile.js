@@ -51,6 +51,8 @@ buttonFirstPage.addEventListener("click", function () {
 
 Array.from(cardAccounts).forEach((element) => {
   element.addEventListener("click", () => {
+    const imgSrc = element.querySelector(".imgAccount").getAttribute("src");
+    localStorage.setItem("imgDinamicProfil", imgSrc);
     window.location.href = "homePage.html";
   });
 });

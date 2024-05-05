@@ -4,3 +4,9 @@ btnReturn.forEach((e) => {
     window.location.href = "index.html";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const imgSrc = localStorage.getItem("imgDinamicProfil");
+  const imgDinamicModifyProfile = document.querySelector(".imgAccount");
+  imgDinamicModifyProfile.setAttribute("src", imgSrc);
+});
