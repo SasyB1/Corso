@@ -37,6 +37,8 @@ buttonFirstPage.addEventListener("click", function () {
       imgAccounts[i].style.opacity = "0.5";
     }
     addedIcons = false;
+    buttonFirstPage.textContent = "Fine";
+    buttonFirstPage.classList.add("buttonChangeEdit");
   } else {
     const editIcons = document.querySelectorAll(".editFirstImage");
     editIcons.forEach((icon) => {
@@ -46,6 +48,8 @@ buttonFirstPage.addEventListener("click", function () {
       imgAccounts[i].style.opacity = "";
     }
     addedIcons = true;
+    buttonFirstPage.textContent = "Gestisci i profili";
+    buttonFirstPage.classList.remove("buttonChangeEdit");
   }
 });
 

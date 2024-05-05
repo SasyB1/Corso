@@ -35,6 +35,15 @@ i {
 .buttonFirstPage {
   font-size: 13px;
 }
+.buttonChangeEdit {
+  background: white !important;
+  color: black !important ;
+  transition: background-color 0.8s, color 0.3s !important;
+}
+.buttonChangeEdit:hover {
+  background-color: red !important;
+  color: white !important;
+}
 
 .borderImageAccount {
   border: 2px solid white;

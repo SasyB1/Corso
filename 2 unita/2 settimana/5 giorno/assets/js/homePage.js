@@ -66,6 +66,14 @@ navbarNav.forEach((genere) => {
   });
 });
 
+const genresButton = document.querySelectorAll(".genresButton");
+genresButton.forEach((generi) => {
+  generi.addEventListener("click", () => {
+    const clickGeneri = generi.textContent;
+    genereDinamic.innerText = clickGeneri;
+  });
+});
+
 const imgCar = document.querySelectorAll("img");
 
 imgCar.forEach((img) => {
