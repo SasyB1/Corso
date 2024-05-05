@@ -141,3 +141,22 @@ section {
 .carousel-inner:has(img:hover) img:not(:hover) {
   opacity: 0.1;
 }
+
+.footerFontSize {
+  font-size: 8px;
+  line-height: 16px;
+}
+.footerCopry {
+  font-size: 8px;
+}
+
+.footerButton {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footerFontSize {
+    font-size: 11px;
+    line-height: 22px;
+  }
+}
