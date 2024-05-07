@@ -1,0 +1,22 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 1.5em !important;
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 2em !important;
+  }
+}
+
+button {
+  width: 100px;
+}
