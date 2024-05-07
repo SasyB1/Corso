@@ -22,7 +22,7 @@ buttonDelete.addEventListener("click", () => {
 });
 
 const counterElement = document.querySelector("#counter");
-let counter = 0;
+let counter = parseInt(sessionStorage.getItem("counter")) || 0;
 
 const timerInterval = setInterval(() => {
   counter++;
