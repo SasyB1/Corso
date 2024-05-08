@@ -76,18 +76,18 @@ const buttonEventListener = function () {
     buyButton.addEventListener("click", (event) => {
       const cardDaddy = event.currentTarget.closest(".card");
       const cloneCard = cardDaddy.cloneNode(true);
-      localStorage.setItem("cartaClonata", cloneCard.outerHTML);
-      document.querySelector(".offcanvas-body").innerHTML = cloneCard.outerHTML;
+      localStorage.setItem("cartaClonata", JSON.stringify(cloneCard));
+      document.querySelector(".offcanvas-body").appendChild(cloneCard);
       addButtonFunctionalityToClonedButtons();
     });
   });
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   const carrelloWrapper = document.querySelector(".offcanvas-body");
   const cartaClonataHTML = localStorage.getItem("cartaClonata");
   if (cartaClonataHTML) {
     carrelloWrapper.innerHTML = cartaClonataHTML;
     addButtonFunctionalityToClonedButtons();
   }
-});
+*/
