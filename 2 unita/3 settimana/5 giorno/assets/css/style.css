@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+
+main {
+  font-family: "Freeman", sans-serif;
+}
+
+#imgH1 {
+  background-image: url("https://assets.albiononline.com/uploads/media/default/media/331a7c33a172b6bdeacd0f2eb4afbf5ae5099b81.jpeg");
+  background-position: 3% 30%;
+  div {
+    width: 35%;
+  }
+}
+
+.backgroundArticle {
+  background-image: url("https://assets.albiononline.com/uploads/media/default/media/012a0d918a277247c6f5e96aa0e9f6a9fbb86aef.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  box-shadow: 1px 3px 11px 0px #d47d3b;
+}
+
+.cardDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btnColor {
+  background-color: #d47d3b !important;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+.backgroundBackOffice {
+  background-image: url("https://albionresource.weebly.com/uploads/8/5/9/9/85991866/albion-lore-land-of-the-undead_1_orig.png");
+  background-position: 40% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundDetails {
+  background-image: url("https://albionresource.weebly.com/uploads/8/5/9/9/85991866/albion-lore-land-of-the-undead_1_orig.png");
+  background-position: 40% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spinnerShow {
+  display: block !important;
+}
