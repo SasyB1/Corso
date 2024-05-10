@@ -123,26 +123,26 @@ const buttonReset = document
   .addEventListener("click", resetCard);
 
 const deleteCard = function () {
-  fetch(`https://striveschool-api.herokuapp.com/api/product/${eventId}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjNkZDljNjgxODQ0MjAwMTUzNzU4ODciLCJpYXQiOjE3MTUzMjk0NzksImV4cCI6MTcxNjUzOTA3OX0.z8Ow7jf05FzzZ5mzi85or2BSWaJBlPZWckU0a-e8JCM",
-    },
-  })
-    .then((response) => {
-      if (response.ok) {
-        if (confirm("Sei sicuro di voler eliminare questa card?")) {
-          location.assign("index.html");
-        }
-      } else {
-        alert("ERRORE - Card non eliminata");
-      }
+  if (confirm("Sei sicuro di voler eliminare questa card?")) {
+    fetch(`https://striveschool-api.herokuapp.com/api/product/${eventId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjNkZDljNjgxODQ0MjAwMTUzNzU4ODciLCJpYXQiOjE3MTUzMjk0NzksImV4cCI6MTcxNjUzOTA3OX0.z8Ow7jf05FzzZ5mzi85or2BSWaJBlPZWckU0a-e8JCM",
+      },
     })
-    .catch((err) => {
-      console.log("ERR", err);
-    });
+      .then((response) => {
+        if (response.ok) {
+          location.assign("index.html");
+        } else {
+          alert("ERRORE - Card non eliminata");
+        }
+      })
+      .catch((err) => {
+        console.log("ERR", err);
+      });
+  }
 };
 
 const buttonDelete = document
