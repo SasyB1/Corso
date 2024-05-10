@@ -32,6 +32,9 @@ main {
 .btnColor {
   background-color: #d47d3b !important;
 }
+.textColor {
+  color: #d47d3b !important ;
+}
 
 footer p {
   font-size: 10px;
