@@ -1,3 +1,4 @@
+document.getElementById("year").innerText = new Date().getFullYear();
 const addressBarContent = new URLSearchParams(location.search);
 const eventId = addressBarContent.get("eventId");
 

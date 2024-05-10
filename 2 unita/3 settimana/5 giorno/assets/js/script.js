@@ -1,3 +1,5 @@
+document.getElementById("year").innerText = new Date().getFullYear();
+
 const generateCards = function (cardsArray) {
   const row = document.getElementById("events-row");
   cardsArray.forEach((card) => {

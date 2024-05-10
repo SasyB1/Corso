@@ -1,3 +1,4 @@
+document.getElementById("year").innerText = new Date().getFullYear();
 class Product {
   constructor(_name, _description, _brand, _image, _price) {
     this.name = _name;
