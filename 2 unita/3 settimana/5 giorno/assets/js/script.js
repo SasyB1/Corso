@@ -173,7 +173,7 @@ const getEvents = function () {
       })
       .catch((error) => {
         spinnerWrapper.classList.remove("spinnerShow");
-        console.log("ERRORE!", err);
+        console.log("ERRORE!", error);
       });
   }, 300);
 };
